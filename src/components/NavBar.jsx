@@ -23,7 +23,8 @@ const Navbar = () => {
     return (
         <nav className={`sticky top-0 z-50 shadow-lg border-b border-gray-500 h-auto py-1 md:py-3 ${bgBlack ? "bg-black" : "bg-white"}`}>
             <div className="container mx-auto lg:px-12 px-4 flex lg:flex-row md:flex-col flex-row flex-wrap items-center justify-between">
-                <div className="flex items-start text-white text-lg mt-2 p-2 md:mt-0 md:w-auto">
+            <a href="/" className={`transition-all duration-400 hover:scale-105 ${location.pathname === '/' } mt-4`}>
+             <div className="flex items-start text-white text-lg mt-2 p-2 md:mt-0 md:w-auto">
                     <img src={bgBlack ? rocket : rocketBlack} alt="" />
                     <div className="flex flex-col justify-center ml-4">
                         <h1 className={`tracking-wide transition-transform duration-400 transform hover:translate-x-1 text-left ${bgBlack ? 'text-white' : 'text-black'}`}>
@@ -34,7 +35,7 @@ const Navbar = () => {
                         </p>
                     </div>
                 </div>
-
+</a>
                 <div className={`hidden md:flex space-x-6 items-center md:gap-7 ${bgBlack ? 'text-white' : 'text-black'}`}>
                     <a href="/" className={`transition-all duration-400 hover:scale-105 ${location.pathname === '/' ? 'selected-tab' : ''} mt-4`}>Home</a>
                     <a href="/about-us" className={`transition-all duration-400 hover:scale-105 ${location.pathname === '/about-us' ? 'selected-tab' : ''} mt-4`}>About Us</a>

@@ -4,7 +4,8 @@ import closed from '../assets/Closed Question.png';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import hero5 from '../assets/hero5.jpg'
+import hero5 from '../assets/hero5.jpg';
+import bg from '../assets/Group 2184.png';
 
 const FAQ = () => {
     const [expanded, setExpanded] = useState(null);
@@ -12,31 +13,49 @@ const FAQ = () => {
     const faqData = [
         {
             id: 1,
-            title: "Lorem ipsum dolor sit amet consectetur. Venenatis duis mauris sit sed?",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes. ",
+            title: "How can Pinnacle Route help my business with digital transformation?",
+            content: "Pinnacle Route specializes in guiding businesses through their digital transformation journey by offering services such as website development, mobile app development, custom software development, graphic design, and digital marketing. Our expertise and innovative solutions are tailored to drive your business forward in the digital landscape.",
         },
         {
             id: 2,
-            title: "Lorem ipsum dolor sit amet consectetur. Venenatis duis mauris sit sed?",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes. ",
+            title: "What sets Pinnacle Route apart from other technology companies?",
+            content: "At Pinnacle Route, we differentiate ourselves through our long-term partnership approach, customer-centric solutions, and commitment to continuous innovation. We prioritize building strong relationships with our clients and delivering tailored digital products and services that address their unique business needs.",
         },
         {
             id: 3,
-            title: "Lorem ipsum dolor sit amet consectetur. Venenatis duis mauris sit sed?",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes. ",
+            title: "How can I collaborate with Pinnacle Route for my business needs?",
+            content: "Collaborating with Pinnacle Route is straightforward. Simply reach out to our team, and we will schedule a consultation to discuss your requirements. Whether you need assistance with website development, mobile app creation, or digital marketing strategies, our experts are ready to tailor a solution to meet your specific goals.",
         },
         {
             id: 4,
-            title: "Lorem ipsum dolor sit amet consectetur. Venenatis duis mauris sit sed?",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes. ",
+            title: "What kind of industries does Pinnacle Route serve?",
+            content: "Pinnacle Route has extensive experience working across various industries, including but not limited to technology, retail, healthcare, finance, and education. Regardless of the industry, our team is well-equipped to understand your business landscape and provide customized digital solutions to drive your success.",
         }
     ];
 
     return (
         <div className="container mx-auto py-8 bg-black flex flex-col items-center">
-        <div className='w-full overflow-hidden flex justify-center items-center'>
-            <img className='lg:min-w-full md:min-w-[160%] w-[200%] max-w-[200%]' src={hero5} alt="" srcset="" />
-        </div>
+          <div className="relative w-full flex justify-center items-center">
+      {/* Background Image */}
+      <img
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src={bg}
+        alt="Background"
+      />
+      
+      {/* Overlay for readability */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+
+      {/* Content Section */}
+      <div className="relative z-10 text-center text-white px-4 sm:px-8 md:px-16 py-16 max-w-2xl">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p className="text-sm md:text-lg">
+        Partner with Pinnacle Route to thrive digitally with our comprehensive technology and services.
+        </p>
+      </div>
+    </div>
         <div className="max-w-[70%]">
             {faqData.map((item, index) => (
                 <Accordion

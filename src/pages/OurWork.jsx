@@ -3,9 +3,7 @@ import Navbar from '../components/NavBar';
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.png'
 import img3 from '../assets/img3.png'
-import img4 from '../assets/img4.png'
-import img5 from '../assets/img5.png'
-import img6 from '../assets/img6.png'
+import img4 from '../assets/avp.png'
 import { GoArrowUpRight } from 'react-icons/go';
 import Footer from '../components/Footer';
 import FAQ from '../components/FAQ';
@@ -13,12 +11,10 @@ import FAQ from '../components/FAQ';
 const OurWork = () => {
 
     const gridData = [
-        { id: 1, imgSrc: img1, text: 'Lorem ipsum dolor sit amet consectetur. Nulla.', class: "bg-[#C0EEE1] text-black" },
-        { id: 2, imgSrc: img2, text: 'Lorem ipsum dolor sit amet consectetur. Nulla.', class: "bg-[#1777F7] text-white" },
-        { id: 3, imgSrc: img3, text: 'Lorem ipsum dolor sit amet consectetur. Nulla.', class: "bg-[#A195D3] text-white" },
-        { id: 4, imgSrc: img4, text: 'Lorem ipsum dolor sit amet consectetur. Nulla.', class: "bg-[#030506] text-white" },
-        { id: 5, imgSrc: img5, text: 'Lorem ipsum dolor sit amet consectetur. Nulla.', class: "bg-[#EF5844] text-white" },
-        { id: 6, imgSrc: img6, text: 'Lorem ipsum dolor sit amet consectetur. Nulla.', class: "bg-[#161616] text-white" },
+        { id: 1, imgSrc: img1, text: 'Mandaean', class: "bg-[#C0EEE1] text-black" },
+        { id: 2, imgSrc: img2, text: 'The Designer Club', class: "bg-[#1777F7] text-white" },
+        { id: 3, imgSrc: img3, text: 'Iconic Jewelry', class: "bg-[#A195D3] text-white" },
+        { id: 4, imgSrc: img4, text: 'AVP', class: "bg-[#030506] text-white" }
     ];
 
     return (
@@ -26,8 +22,8 @@ const OurWork = () => {
             <Navbar />
             <div className='py-24 flex flex-col items-center'>
                 <div className='flex flex-col items-center w-[45%] mb-8'>
-                    <div className='text-4xl font-bold'>Lorem ipsum dolor sit amet consectetur.</div>
-                    <div className='text-xl mt-4'>Lorem ipsum dolor sit amet consectetur. Imperdiet neque pellentesque ut volutpat in eget nulla sit. Parturient auctor tristique volutpat odio massa fringilla ullamcorper adipiscing. Urna ullamcorper odio adipiscing sagittis.</div>
+                    <div className='text-4xl font-bold'>Empowering Businesses through Innovative AI & Digital Solutions</div>
+                    <div className='text-xl mt-4'>Pinnacle Route empowers businesses with innovative digital solutions (AI, web/app development, software, design, marketing), focusing on user-centric design and growth.</div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 p-12">
                     {gridData.map((item, i) => (

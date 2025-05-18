@@ -24,7 +24,7 @@ const HomePageConten = () => {
   return (
     <div className="bg-black text-white min-h-screen overflow-x-hidden">
       
-      <div className="container w-full p-3 pt-24 md:pb-44 w-full">
+      <div className="container p-3 pt-24 md:pb-44 w-full">
         
         {screenSize < 768 ? <MobileLayout /> : screenSize < 1208 ? <TabletLayout /> : <LaptopLayout />}
       </div>
@@ -48,7 +48,7 @@ const ImageOverlay = () => (
 );
 
 const LaptopLayout = () => (
-  <div className="relative flex flex-col items-center md:pr-4 md:pr-7 md:pb-20 z-0 w-full">
+  <div className="relative flex flex-col items-center md:pr-4md:pb-20 z-0 w-full">
     <img 
       src={background} 
       alt="" 
@@ -62,7 +62,7 @@ const LaptopLayout = () => (
       </h1>
       <div className="flex flex-col md:flex-row justify-center items-center gap-7 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 mt-4">
         <span className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-9xl font-semibold">
-          Agency
+          Agenc
         </span>
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start gap-6 md:gap-20">
           <p className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-xl max-w-xs sm:max-w-md md:max-w-lg text-justify leading-tight font-light md:mt-12 flex flex-col justify-center">
@@ -92,8 +92,8 @@ const TabletLayout = () => (
       className="absolute w-4/5 bottom-96 left-96 object-cover z-0" 
       style={{ pointerEvents: "none", top: '-40px' }} // Adjust the top position
     />
-    <h1 className="text-5xl sm:text-7xl mt-10 mb-2 font-semibold">Digital Marketing</h1>
-    <span className="text-5xl sm:text-7xl mt-0 font-semibold">Agency</span>
+    <h1 className="text-5xl sm:text-7xl mt-10 mb-2 font-semibold">Achieve Digital</h1>
+    <span className="text-5xl sm:text-7xl mt-0 font-semibold">Excellence</span>
     <div className="flex flex-col items-center mt-6">
       <p className="text-gray-300 text-base sm:text-lg text-center leading-tight font-light">
         <span className="block indent-0">Building Digital Products</span>
@@ -116,8 +116,8 @@ const MobileLayout = () => (
       className="absolute w-full object-cover z-0" 
       style={{ pointerEvents: "none", top: '-40px' }} // Adjust the top position
     />
-    <h1 className="text-4xl sm:text-5xl mt-28 mb-2 font-semibold z-10 ">Digital Marketing</h1>
-    <span className="text-4xl sm:text-5xl mt-0 font-semibold z-10">Agency</span>
+    <h1 className="text-4xl sm:text-5xl mt-28 mb-2 font-semibold z-10 ">Achieve Digital</h1>
+    <span className="text-4xl sm:text-5xl mt-0 font-semibold z-10">Excellence</span>
     <div className="flex flex-col items-center mt-6">
       <p className="text-gray-300 text-sm sm:text-base text-center leading-tight font-light">
         <span className="block indent-0">Building Digital Products</span>

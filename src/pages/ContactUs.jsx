@@ -28,17 +28,18 @@ const ContactUs = () => {
                     <div className='w-[100%] md:max-w-[70%]'>
                         <div className='font-semibold text-[18px] text-gray-400'>CONTACT US</div>
                         <div className='font-semibold text-5xl mb-4'>Get in touch today</div>
-                        <div className='text-[20px] mb-16'>Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincidunt interdum tellus du.</div>
+                        <div className='text-[20px] mb-16'>Contact us to unlock your digital potential and drive business success.
+</div>
                         <div className='max-w-[50%] text-[20px] flex flex-col gap-4'>
                             <div>
-                                <div>contact@company.com</div>
+                                <div> admin@pinnacleroute.com</div>
                             </div>
                             <div>
-                                <div>(123) 456 - 789</div>
+                                <div> https://www.pinnacleroute.com</div>
                             </div>
-                            <div>
+                            {/* <div>
                                 <div>794 Mcallister St San Francisco, 94102</div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/NavBar';
-import hero from '../assets/hero banner.jpg'
+import hero from '../assets/Group 39479.png'
 import hero2 from '../assets/hero2.jpg'
 import hero3 from '../assets/hero3.jpg'
 import hero4 from '../assets/hero4.jpg'
@@ -12,13 +12,20 @@ import bgBubble from '../assets/bg-bubble.png'
 import Showchar from '../components/Showchar';
 import logo from '../assets/logos.png';
 import { GoArrowUpRight } from 'react-icons/go';
-import laptop from '../assets/laptop.png';
-import laptop2 from '../assets/laptop2.png';
-import phone from '../assets/phone.png';
 import bg from '../assets/bg.png';
-import icon from '../assets/icon.png';
+import website from '../assets/website.png';
+import mobile from '../assets/mobile.png';
+import ai from '../assets/AI.png';
+import custom from '../assets/custom.png';
+import figma from '../assets/graphic.png';
+import digital from '../assets/Digital.png';
 import Footer from '../components/Footer';
 import FAQ from '../components/FAQ';
+import mand from '../assets/mand.png'
+import Club from '../assets/club.png'
+import iconic from '../assets/iconic.png'
+import avp from '../assets/avp.png'
+
 
 const Home = () => {
     const [isBeginning, setIsBeginning] = useState(true);
@@ -32,105 +39,91 @@ const Home = () => {
     const reviews = [
         {
             id: 1,
-            name: 'Matt Cannon',
-            designation: "Lead Developer",
-            review: '“Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant morbi tristique senectus et netus et uteu.”',
+            name: 'Mandaean',
+            designation: "Billy Jaderpor",
+            review: '“Working with Pinnacle Route was a game-changer for our brand. The team brought our vision to life with a beautiful, responsive digital experience that truly reflects our identity. They were professional, detail-oriented, and exceeded every expectation. Highly recommend for anyone serious about digital excellence!”',
             rating: 5,
         },
         {
             id: 2,
-            name: 'Matt Cannon',
-            designation: "Lead Developer",
-            review: '“Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant morbi tristique senectus et netus et uteu.”',
+            name: 'The Designer Club',
+            designation: "Maddie Davies",
+            review: '“Pinnacle Route made the process of creating our fashion platform seamless and inspiring. They combined creativity with technical expertise to deliver a stunning and user-friendly website. Communication was always clear and timely, and the results were even better than we imagined!”',
             rating: 5,
         },
         {
             id: 3,
-            name: 'Matt Cannon',
-            designation: "Lead Developer",
-            review: '“Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant morbi tristique senectus et netus et uteu.”',
+            name: 'Iconic Jewelry',
+            designation: "Bashar Saeed",
+            review: '“I could not have asked for a better partner than Pinnacle Route. They understood the elegance and sophistication we needed for our jewelry brand and brought it to life with precision and beauty. Their attention to detail and commitment to quality were outstanding from start to finish.”',
             rating: 5,
-        },
-        {
-            id: 4,
-            name: 'Matt Cannon',
-            designation: "Lead Developer",
-            review: '“Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant morbi tristique senectus et netus et uteu.”',
-            rating: 5,
-        },
-        {
-            id: 5,
-            name: 'Matt Cannon',
-            designation: "Lead Developer",
-            review: '“Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant morbi tristique senectus et netus et uteu.”',
-            rating: 5,
-        },
-        {
-            id: 6,
-            name: 'Matt Cannon',
-            designation: "Lead Developer",
-            review: '“Convallis posuere morbi leo urna molestie at elementum eu facilisis sapien pellentesque habitant morbi tristique senectus et netus et uteu.”',
-            rating: 5,
-        },
+        }
     ];
 
     const data = [
         {
             id: 1,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
-            imageUrl: phone, // Replace with your image URL
+            title: "Mandaean (Android & iOS)",
+            website: `Android: https://play.google.com/store/apps/details?id=com.mandaean
+            \n
+            iOS: https://apps.apple.com/in/app/mandaean-life/id6450825296`,
+            description: `
+          This mobile app is a massive online resource community for Mandaean history, beliefs & events!
+          `,
+            imageUrl: mand
         },
         {
             id: 2,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
-            imageUrl: laptop, // Replace with your image URL
+            title: "The Designer Club (Website)",
+            website: `Website: https://thedesignerclub.com.au/            `,
+            description: "It's an Aussie platform where you can rent or lend clothes from other people's wardrobes!            ",
+            imageUrl: Club
         },
         {
             id: 3,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
-            imageUrl: laptop2, // Replace with your image URL
-        },
+            title: "Iconic Jewelry (Website) ",
+            website: `Website: https://www.iconicjewelry.com/ `,
+            description: "It's an e-commerce platform producing climate-conscious jewelry.             ",
+            imageUrl: iconic
+        }
     ];
 
     const gridData = [
         {
             id: 1,
-            title: "Design Services",
-            description: "Lorem ipsum dolor sit amet consectetur. Ut massa turpis non sem semper euismod tortor rhoncus. Molestie quis sit ligula lectus urna sed vitae tempor.",
-            imageUrl: icon, // Replace with your image URL
+            title: "AI & Automation",
+            description: "We specialize in AI-driven solutions and automation technologies that optimize business processes, enhance efficiency, and drive intelligent decision-making.",
+            imageUrl: ai,
         },
         {
             id: 2,
-            title: "Design Services",
-            description: "Lorem ipsum dolor sit amet consectetur. Ut massa turpis non sem semper euismod tortor rhoncus. Molestie quis sit ligula lectus urna sed vitae tempor.",
-            imageUrl: icon, // Replace with your image URL
+            title: " Website Development:",
+            description: "We create engaging, high-performance websites with design, development, and maintenance using the latest technologies.",
+            imageUrl: website, // Replace with your image URL
         },
         {
             id: 3,
-            title: "Design Services",
-            description: "Lorem ipsum dolor sit amet consectetur. Ut massa turpis non sem semper euismod tortor rhoncus. Molestie quis sit ligula lectus urna sed vitae tempor.",
-            imageUrl: icon, // Replace with your image URL
+            title: " Mobile App Development",
+            description: "We build interactive, feature-rich iOS and Android apps, focusing on user-centric design to enhance engagement and deliver value.",
+            imageUrl: mobile, // Replace with your image URL
         },
         {
             id: 4,
-            title: "Design Services",
-            description: "Lorem ipsum dolor sit amet consectetur. Ut massa turpis non sem semper euismod tortor rhoncus. Molestie quis sit ligula lectus urna sed vitae tempor.",
-            imageUrl: icon, // Replace with your image URL
+            title: "Custom Software Development",
+            description: "We build custom, scalable software to streamline processes, improve efficiency, and drive growth, tailored to your unique business needs.",
+            imageUrl: custom, // Replace with your image URL
         },
         {
             id: 5,
-            title: "Design Services",
-            description: "Lorem ipsum dolor sit amet consectetur. Ut massa turpis non sem semper euismod tortor rhoncus. Molestie quis sit ligula lectus urna sed vitae tempor.",
-            imageUrl: icon, // Replace with your image URL
+            title: "Graphic Design",
+            description: "We create visually compelling graphics, including logos and marketing materials, to enhance your brand identity and resonate with your audience.",
+            imageUrl: figma, // Replace with your image URL
         },
         {
             id: 6,
-            title: "Design Services",
-            description: "Lorem ipsum dolor sit amet consectetur. Ut massa turpis non sem semper euismod tortor rhoncus. Molestie quis sit ligula lectus urna sed vitae tempor.",
-            imageUrl: icon, // Replace with your image URL
+            title: "Digital Marketing",
+            description: "We enhance online presence and drive conversions through SEO, PPC, social media, and content marketing, maximizing your ROI.",
+            imageUrl: digital, // Replace with your image URL
         }
     ];
 
@@ -141,24 +134,21 @@ const Home = () => {
             <Showchar />
             <div className='bg-black pt-24 pb-8 text-white flex flex-col items-center'>
                 <p className='text-3xl text-center font-semibold'>
-                    We collaborate with <span className='text-blue-600'>250+ leading companies</span>
+                    We collaborate with <span className='text-blue-600'>50+ leading companies</span>
                 </p>
                 <img src={logo} alt="" className='mt-12 h-20' />
             </div>
-            {/* <img src={hero2} alt="" srcset="" /> */}
-            <div className='w-full flex lg:flex-row flex-col justify-between items-center bg-white md:px-12 px-6 pt-24 md:pb-28 pb-12 text-blue-600'>
+            {/* <div className='w-full flex lg:flex-row flex-col justify-between items-center bg-white md:px-12 px-6 pt-24 md:pb-28 pb-12 text-blue-600'>
                 <div className='lg:max-w-[50%] w-full lg:text-5xl sm:text-4xl text-3xl font-bold'>
                     We thrive at transforming product ideas into digital life
                 </div>
                 <div className="relative flex justify-around items-center lg:w-[40%] sm:w-[50%] w-[80%] lg:mt-0 mt-12 lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-bold">
-                    {/* Background Image */}
+              
                     <img
                         src={bgBubble}
                         alt="Background"
                         className="absolute w-full left-0 z-0"
                     />
-
-                    {/* Content Layer */}
                     <div className="relative z-10 flex justify-around items-center w-full">
                         <div>10</div>
                         <div>113+</div>
@@ -171,10 +161,8 @@ const Home = () => {
                         key={item.id}
                         className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-12 items-center"
                     >
-                        {/* Conditional Rendering for Alternating Layout */}
                         {index % 2 === 0 ? (
                             <>
-                                {/* Text on Left, Image on Right */}
                                 <div className="order-1 md:order-none">
                                     <h2 className="text-4xl font-bold mb-4">{item.title}</h2>
                                     <p className="text-gray-700 text-xl">{item.description}</p>
@@ -189,7 +177,6 @@ const Home = () => {
                             </>
                         ) : (
                             <>
-                                {/* Image on Left, Text on Right */}
                                 <div className="order-2 md:order-none">
                                     <img
                                         src={item.imageUrl}
@@ -213,21 +200,79 @@ const Home = () => {
                         <GoArrowUpRight className="ml-1" />
                     </a>
                 </div>
-            </div>
-            {/* <div className='flex justify-between bg-black pt-24 pb-12'>
-                <div className='w-[50%] flex flex-col justify-center'>
-                    <img src={hero4} alt="" srcset="" />
-                    <div className='ml-16 mt-6'>
-                        <a href="#contact" className="border border-white text-white px-4 py-2 hover:bg-white hover:text-black transition-all duration-700 inline-flex items-center">
-                            <div>
-                                Know More About Us
-                            </div>
-                            <GoArrowUpRight className="ml-1" />
-                        </a>
-                    </div>
-                </div>
-                <img src={hero3} className='w-[50%]' alt="" srcset="" />
             </div> */}
+            <div className="w-full px-4 md:px-16 pb-16 z-10 text-white">
+                {data.map((item, index) => (
+                    <div
+                        key={item.id}
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-12 mb-12 items-center"
+                    >
+                        {index % 2 === 0 ? (
+                            <>
+                                {/* Text on Left, Image on Right */}
+                                <div className="order-1 md:order-none lg:col-span-6">
+                                    <h2 className="text-4xl font-bold mb-4">{item.title}</h2>
+                                    <p className="text-1xl font-bold mb-2">
+                                        {item.website.split('\n').map((line, i) => (
+                                            <div key={i}>
+                                                <a
+                                                    href={line.trim().split(': ')[1]}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-blue-400 underline hover:text-blue-300"
+                                                >
+                                                    {line.trim()}
+                                                </a>
+                                            </div>
+                                        ))}
+                                    </p>
+                                    <p className="text-gray-400 text-xl whitespace-pre-line">
+                                        {item.description}
+                                    </p>
+                                </div>
+                                <div className="order-2 md:order-none lg:col-span-6">
+                                    <img
+                                        src={item.imageUrl}
+                                        alt={item.title}
+                                        className="w-full h-auto max-h-[400px] object-contain shadow-lg"
+                                    />
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                {/* Image on Left, Text on Right */}
+                                <div className="order-2 md:order-none lg:col-span-6">
+                                    <img
+                                        src={item.imageUrl}
+                                        alt={item.title}
+                                        className="w-full h-auto max-h-[400px] object-contain shadow-lg"
+                                    />
+                                </div>
+                                <div className="order-1 md:order-none lg:col-span-6">
+                                    <h2 className="text-4xl font-bold mb-4">{item.title}</h2>
+                                    <p className="text-1xl font-bold mb-2">
+                                        {item.website.split('\n').map((line, i) => (
+                                            <div key={i}>
+                                                <a
+                                                    href={line.trim().split(': ')[1]}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-blue-400 underline hover:text-blue-300"
+                                                >
+                                                    {line.trim()}
+                                                </a>
+                                            </div>
+                                        ))}
+                                    </p>
+                                    <p className="text-gray-400 text-xl whitespace-pre-line">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </>
+                        )}
+                    </div>
+                ))}
+            </div>
             <div className='py-16'
                 style={{ backgroundImage: `url('${bg}')` }}
             >
@@ -237,8 +282,7 @@ const Home = () => {
                     </div>
                     <div className='flex flex-col sm:max-w-[35%] max-w-[90%]'>
                         <div className='mb-10'>
-                            Lorem ipsum dolor sit amet consectetur. Sem egestas nulla fames luctus laoreet nunc. Feugiat orci accumsan tortor nunc rhoncus pellentesque nunc tincidunt eu. In ipsum nec pharetra nisi lectus porttitor sed felis.
-                        </div>
+                            At Pinnacle Route, we leverage a versatile and cutting-edge technology stack to deliver innovative and tailored solutions to our clients. Our team combines expertise in various technologies to create seamless digital experiences that empower businesses to thrive in the digital era.                        </div>
                         <div>
                             <a href="/contact-us" className="border border-white text-white px-4 py-2 hover:bg-white hover:text-black transition-all duration-700 inline-flex items-center">
                                 <div>
@@ -253,12 +297,12 @@ const Home = () => {
                     {gridData.map((item) => (
                         <div
                             key={item.id}
-                            className="bg-white shadow-lg rounded-xl p-12 flex flex-col"
+                            className="bg-white shadow-lg rounded-xl p-8 flex flex-col"
                         >
                             <img
                                 src={item.imageUrl}
                                 alt={item.title}
-                                className="w-14 h-14 object-cover rounded-full mb-4"
+                                className="w-14 h-14 mb-4"
                             />
                             <h3 className="text-4xl font-semibold mb-4">{item.title}</h3>
                             <p className="text-gray-600 text-[14px]">{item.description}</p>
@@ -275,26 +319,21 @@ const Home = () => {
                             alt="Background"
                             className="absolute w-full left-0 md:left-[-90px] top-[-20px] lg:top-[-20px] xl:top-[-60px] 2xl:top-[-120px] z-0"
                         />
-                        <div className="relative z-10 w-full text-white text-4xl font-semibold mb-2">
-                            What our client say
+                        <div className="relative z-10 w-full text-white text-4xl font-semibold mb-6">
+                            What Our Clients Say
                         </div>
                         <div className="relative z-10 w-full text-white text-[15px]">
-                            Lorem ipsum dolor sit amet consectetur. Sem egestas nulla fames luctus laoreet nunc. Feugiat orci accumsan tortor nunc rhoncus pellentesqu.
+                            Discover the experiences of our satisfied clients. Read client testimonials to see how our solutions positively impacted their businesses.
+
                         </div>
                     </div>
                     <div className='flex items-center gap-4 '>
                         <a href="/contact-us" className="text-xl bg-black bg-gradient-to-tr from-yellow-400 to-fuchsia-600 text-white px-5 py-2 hover:bg-white hover:text-black transition-all duration-700 inline-flex items-center">
                             <div>
-                                Contact Us
+                                Talk to Sales
                             </div>
                             <GoArrowUpRight className="ml-1" />
                         </a>
-                        <a href="#contact" className="border border-white text-white px-5 py-2 hover:bg-white hover:text-black transition-all duration-700 inline-flex items-center">
-                                <div>
-                                    Request a Project
-                                </div>
-                                <GoArrowUpRight className="ml-1" />
-                            </a>
                     </div>
                 </div>
                 <div style={{ position: 'relative', padding: '20px' }}>

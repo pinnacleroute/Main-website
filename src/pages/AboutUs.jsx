@@ -13,14 +13,14 @@ const AboutUs = () => {
     const data = [
         {
             id: 1,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "At Pinnacle Route, we are more than just a technology company",
+            description: "We are your partners in growth and success. We collaborate with seasoned business leaders and entrepreneurs to build and transform businesses through innovative digital solutions.            ",
             imageUrl: about1, // Replace with your image URL
         },
         {
             id: 2,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "With over a decade of expertise",
+            description: "We guide businesses across all industries through their digitalization and automation journey, leveraging cutting-edge AI technologies. Our mission is clear—to help businesses move forward in every stage of their product journey, propelling them towards digital greatness.            ",
             imageUrl: about2, // Replace with your image URL
         },
     ];
@@ -28,32 +28,32 @@ const AboutUs = () => {
     const manifestoData = [
         {
             id: 1,
-            title: "Lorem ipsum dolor",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "Innovation at the Core",
+            description: "We foster a culture of innovation, constantly pushing boundaries to deliver cutting-edge digital solutions that drive success for our partners.            ",
             imageUrl: about1, // Replace with your image URL
         },
         {
             id: 2,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "Long-Term Partnerships",
+            description: "We are committed to building strong, long-lasting partnerships with our clients, working hand-in-hand to achieve their goals and propel their businesses to new heights.",
             imageUrl: about2, // Replace with your image URL
         },
         {
             id: 3,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "Customer-Centric Approach",
+            description: "Every decision and solution is tailored to meet the unique needs and challenges of our clients.            ",
             imageUrl: about2, // Replace with your image URL
         },
         {
             id: 4,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "Continuous Learning and Growth",
+            description: "We stay ahead of industry trends and technologies to provide our partners with the most advanced and effective solutions.            ",
             imageUrl: about2, // Replace with your image URL
         },
         {
             id: 5,
-            title: "Lorem ipsum dolor sit amet consectetur. Nulla.",
-            description: "Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam. Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam. Vitae scelerisque nec at’",
+            title: "Ethical and Transparent Practices",
+            description: "Integrity and transparency are the cornerstones of our operations, ensuring trust and reliability in every interaction.            ",
             imageUrl: about2, // Replace with your image URL
         }
     ];
@@ -113,9 +113,8 @@ const AboutUs = () => {
         <div className='bg-black'>
             <Navbar />
             <div className='py-24 flex flex-col items-center'>
-                <div className='flex flex-col items-center w-[70%] md:w-[45%] mb-8 text-white'>
-                    <div className='text-4xl font-bold'>Lorem ipsum dolor sit amet consectetur.</div>
-                    <div className='text-4xl font-bold mt-2'>Nibh ornare netus posuere eununc.</div>
+                <div className='flex flex-col items-center text-white'>
+                    <div className='text-4xl font-bold'>Elevate Your Business with Pinnacle Route</div>
                 </div>
             </div>
             <div className="w-full px-4 md:px-16 pb-16 z-10 text-white">
@@ -163,10 +162,7 @@ const AboutUs = () => {
                 <div className='flex flex-col gap-8 max-w-[90%]'>
                     <div className='text-white text-[30px] font-medium'>
                         <div>
-                            OUR
-                        </div>
-                        <div>
-                            MANIFESTO
+                            OUR MANIFESTO
                         </div>
                     </div>
                     <div className='h-[2px] bg-gray-600 w-[60px]'></div>
@@ -190,21 +186,15 @@ const AboutUs = () => {
                     <div className='flex flex-col lg:flex-row gap-6 lg:gap-28 lg:px-28'>
                         <div className='text-black text-[34px] font-medium'>
                             <div>
-                                LEADERSHIP
-                            </div>
-                            <div>
-                                TEAM
+                                LEADERSHIP TEAM
                             </div>
                             <div className='h-[2px] bg-gray-600 w-[80px] my-6'></div>
                         </div>
                         <div className='text-[22px]'>
-                            Lorem ipsum dolor sit amet consectetur. A auctor purus fermentum
-                            nec et sed aliquet. Leo amet tellus nec sit nunc phasellus netus aliquam.
-                            Vitae scelerisque nec at ultricies arcu sed maecenas. Ac et quam.
-                            Vitae scelerisque nec at’
+                        Pinnacle Route's experienced leadership team drives innovation and collaboration, guiding the company toward digital excellence.
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {teamData.map((item) => (
                             <div
                                 key={item.id}
@@ -219,7 +209,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <FAQ />
