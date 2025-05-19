@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import rocket from "../assets/rocket.png"
-import rocketBlack from "../assets/rocketBlack.png"
+import rocket from "../assets/arrow-black.png"
+import rocketBlack from "../assets/arrow-white.jpg"
 import { GoArrowUpRight } from "react-icons/go";
 import { useLocation } from 'react-router-dom';
 
@@ -58,13 +58,13 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className={`md:hidden bg-transparent border-t border-gray-500 mr-auto ${bgBlack ? "text-white" : "text-black"}`}>
+                <div className={`md:hidden bg-transparent border-gray-500 mr-auto ${bgBlack ? "text-white" : "text-black"}`}>
                     <a href="/" className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-400">Home</a>
                     <a href="/about-us" className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-400">About Us</a>
                     <a href="/services" className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-400">Services</a>
                     <a href="/our-work" className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-400">Our Work</a>
                     {/* <a href="/faq" className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-400">FAQ</a> */}
-                    <a href="/contact-us" className="block border-t border-gray-500 px-4 py-2 hover:bg-gray-700 transition-colors duration-400">Contact Us</a>
+                    <a href="/contact-us" className="block border-gray-500 px-4 py-2 hover:bg-gray-700 transition-colors duration-400">Contact Us</a>
                 </div>
             )}
         </nav>

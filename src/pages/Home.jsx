@@ -7,7 +7,7 @@ import hero4 from '../assets/hero4.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import bgBubble from '../assets/bg-bubble.png'
 import Showchar from '../components/Showchar';
 import logo from '../assets/logos.png';
@@ -21,10 +21,11 @@ import figma from '../assets/graphic.png';
 import digital from '../assets/Digital.png';
 import Footer from '../components/Footer';
 import FAQ from '../components/FAQ';
-import mand from '../assets/mand.png'
+import mand from '../assets/unnamed (1).png'
 import Club from '../assets/club.png'
 import iconic from '../assets/iconic.png'
 import avp from '../assets/avp.png'
+
 
 
 const Home = () => {
@@ -39,7 +40,7 @@ const Home = () => {
     const reviews = [
         {
             id: 1,
-            name: 'Mandaean',
+            name: 'Mandaean Life',
             designation: "Billy Jaderpor",
             review: '“Working with Pinnacle Route was a game-changer for our brand. The team brought our vision to life with a beautiful, responsive digital experience that truly reflects our identity. They were professional, detail-oriented, and exceeded every expectation. Highly recommend for anyone serious about digital excellence!”',
             rating: 5,
@@ -63,7 +64,7 @@ const Home = () => {
     const data = [
         {
             id: 1,
-            title: "Mandaean (Android & iOS)",
+            title: "Mandaean Life",
             website: `Android: https://play.google.com/store/apps/details?id=com.mandaean
             \n
             iOS: https://apps.apple.com/in/app/mandaean-life/id6450825296`,
@@ -74,14 +75,14 @@ const Home = () => {
         },
         {
             id: 2,
-            title: "The Designer Club (Website)",
+            title: "The Designer Club",
             website: `Website: https://thedesignerclub.com.au/            `,
             description: "It's an Aussie platform where you can rent or lend clothes from other people's wardrobes!            ",
             imageUrl: Club
         },
         {
             id: 3,
-            title: "Iconic Jewelry (Website) ",
+            title: "Iconic Jewelry",
             website: `Website: https://www.iconicjewelry.com/ `,
             description: "It's an e-commerce platform producing climate-conscious jewelry.             ",
             imageUrl: iconic
@@ -212,7 +213,7 @@ const Home = () => {
                                 {/* Text on Left, Image on Right */}
                                 <div className="order-1 md:order-none lg:col-span-6">
                                     <h2 className="text-4xl font-bold mb-4">{item.title}</h2>
-                                    <p className="text-1xl font-bold mb-2">
+                                    {/* <p className="text-1xl font-bold mb-2">
                                         {item.website.split('\n').map((line, i) => (
                                             <div key={i}>
                                                 <a
@@ -225,7 +226,7 @@ const Home = () => {
                                                 </a>
                                             </div>
                                         ))}
-                                    </p>
+                                    </p> */}
                                     <p className="text-gray-400 text-xl whitespace-pre-line">
                                         {item.description}
                                     </p>
@@ -250,7 +251,7 @@ const Home = () => {
                                 </div>
                                 <div className="order-1 md:order-none lg:col-span-6">
                                     <h2 className="text-4xl font-bold mb-4">{item.title}</h2>
-                                    <p className="text-1xl font-bold mb-2">
+                                    {/* <p className="text-1xl font-bold mb-2">
                                         {item.website.split('\n').map((line, i) => (
                                             <div key={i}>
                                                 <a
@@ -263,7 +264,7 @@ const Home = () => {
                                                 </a>
                                             </div>
                                         ))}
-                                    </p>
+                                    </p> */}
                                     <p className="text-gray-400 text-xl whitespace-pre-line">
                                         {item.description}
                                     </p>
@@ -312,7 +313,7 @@ const Home = () => {
             </div>
             <div>
                 <div className='flex flex-col md:flex-row sm:justify-between sm:items-center px-8 mb-4'>
-                    <div className="relative lg:w-[40%] sm:w-[50%] w-[80%] lg:mt-0 mt-12 pb-16 pt-8 md:pt-[90px]">
+                    <div className="relative lg:w-[40%] sm:w-[50%] lg:mt-0 mt-12 pb-16 pt-8 md:pt-[90px]">
                         {/* Background Image */}
                         <img
                             src={bgBubble}
@@ -336,30 +337,35 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-                <div style={{ position: 'relative', padding: '20px' }}>
+                <div className="w-full px-4 sm:px-6 md:px-8">
                     {/* Swiper Carousel */}
                     <Swiper
-                        modules={[Pagination, Navigation]}
+                        modules={[Pagination, Navigation, Autoplay]}
                         spaceBetween={30}
-                        slidesPerView={4}
+                        slidesPerView={3}
                         pagination={{ clickable: true }}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
                         navigation={{
-                            nextEl: '.custom-next', // Custom Next button
-                            prevEl: '.custom-prev', // Custom Prev button
+                            nextEl: '.custom-next',
+                            prevEl: '.custom-prev',
                         }}
                         onSlideChange={(swiper) => handleSwiper(swiper)}
                         onSwiper={(swiper) => handleSwiper(swiper)}
                         breakpoints={{
-                            640: { slidesPerView: 1 },
+                            0: { slidesPerView: 1 },      // ✅ For mobile view
+                            640: { slidesPerView: 1 },    // ✅ Just in case
                             768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
+                            1024: { slidesPerView: 3 }
                         }}
                     >
                         {reviews.map((review) => (
                             <SwiperSlide key={review.id}>
                                 <div
                                     style={{
-                                        padding: '35px 25px',
+                                        padding: '25px',
                                         border: '1px solid #ddd',
                                         borderRadius: '8px',
                                         backgroundColor: '#fff'
@@ -367,8 +373,8 @@ const Home = () => {
                                 >
                                     <div className='flex gap-2 mb-4'>
                                         {Array.from({ length: review.rating }, (_, index) => (
-                                            <svg width="21" height="20" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.6078 25.3567C15.2179 24.9884 15.9819 24.9884 16.5921 25.3567L22.8679 29.1446C24.3219 30.0222 26.1157 28.7185 25.7298 27.0645L24.0642 19.9262C23.9022 19.2321 24.1381 18.5054 24.6768 18.0387L30.2241 13.2332C31.5079 12.1211 30.8216 10.0124 29.1292 9.86885L21.8297 9.24977C21.1201 9.18959 20.5021 8.74159 20.2242 8.08591L17.3677 1.34647C16.7061 -0.214495 14.4938 -0.214494 13.8322 1.34648L10.9756 8.08591C10.6977 8.74159 10.0797 9.18959 9.37011 9.24977L2.0706 9.86885C0.378226 10.0124 -0.308036 12.1211 0.975713 13.2332L6.52303 18.0387C7.06174 18.5054 7.29761 19.2321 7.13565 19.9262L5.47005 27.0645C5.08412 28.7185 6.87789 30.0222 8.33197 29.1446L14.6078 25.3567Z" fill="#FFC700" />
+                                            <svg key={index} width="21" height="20" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="..." fill="#FFC700" />
                                             </svg>
                                         ))}
                                     </div>
@@ -379,44 +385,6 @@ const Home = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <button
-                        className="custom-prev bg-gradient-to-tr from-yellow-400 to-fuchsia-600 text-white"
-                        style={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '10px',
-                            transform: 'translateY(-50%)',
-                            color: '#fff',
-                            border: 'none',
-                            borderRadius: '50%',
-                            width: '40px',
-                            height: '40px',
-                            cursor: 'pointer',
-                            visibility: isBeginning ? "hidden" : "visible",
-                            zIndex: 100
-                        }}
-                    >
-                        &#8249;
-                    </button>
-                    <button
-                        className="custom-next bg-gradient-to-tr from-yellow-400 to-fuchsia-600 text-white"
-                        style={{
-                            position: 'absolute',
-                            top: '50%',
-                            right: '10px',
-                            transform: 'translateY(-50%)',
-                            color: '#fff',
-                            border: 'none',
-                            borderRadius: '50%',
-                            width: '40px',
-                            height: '40px',
-                            cursor: 'pointer',
-                            visibility: isEnd ? "hidden" : "visible",
-                            zIndex: 100
-                        }}
-                    >
-                        &#8250;
-                    </button>
                 </div>
             </div>
             <FAQ />

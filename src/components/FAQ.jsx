@@ -56,7 +56,7 @@ const FAQ = () => {
         </p>
       </div>
     </div>
-        <div className="max-w-[70%]">
+        <div className="max-w-[80%]">
             {faqData.map((item, index) => (
                 <Accordion
                     key={item.id}
@@ -78,14 +78,14 @@ const FAQ = () => {
                         }}
                     >
                         <div className="w-full flex justify-between items-center sm:text-2xl text-md">
-                            <div className="max-w-[90%]">
+                            <div className="max-w-[90%] text-xl">
                                 {item.title}
                             </div>
                             <img className="h-[30px] w-[30px]" src={expanded === item.id ? opened : closed} alt="" />
                         </div>
                     </AccordionSummary>
                     <AccordionDetails sx={{ color: "white" }}>
-                        <div className="text-xl">{item.content}</div>
+                        <div className="text-sm">{item.content}</div>
                     </AccordionDetails>
                 </Accordion>
             ))}

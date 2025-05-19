@@ -3,6 +3,12 @@ import Navbar from '../components/NavBar';
 import about1 from '../assets/about-us-1.png';
 import about2 from '../assets/about-us-2.png';
 import service from '../assets/Rectangle 22.png';
+import ai from '../assets/ai-ser.png';
+import web from '../assets/web-ser.png';
+import mobile from '../assets/mobile-ser.png';
+import custom from '../assets/custom-ser.png';
+import graphic from '../assets/graphic-ser.png';
+import digital from '../assets/digital-ser.png';
 import team from '../assets/Rectangle 24.png';
 import { GoArrowUpRight } from 'react-icons/go';
 import Footer from '../components/Footer';
@@ -44,7 +50,7 @@ const Services = () => {
             'Optimizing workflows and improving operational efficiency with AI-powered automation tools.              ',
         }
       ],
-      imageUrl: service,
+      imageUrl: ai,
     },
     {
       id: 2,
@@ -81,7 +87,7 @@ const Services = () => {
             'Our websites are built for speed, SEO-friendliness, and high performance to enhance user satisfaction.            ',
         }
       ],
-      imageUrl: service,
+      imageUrl: web,
     },
     {
       id: 3,
@@ -112,7 +118,7 @@ const Services = () => {
             'We conduct rigorous quality assurance to guarantee security, performance, and reliability.            ',
         }
       ],
-      imageUrl: service,
+      imageUrl: mobile,
     },
     {
       id: 4,
@@ -143,7 +149,7 @@ const Services = () => {
             'We manage the entire lifecycle, from ideation to maintenance and future scalability.            ',
         }
       ],
-      imageUrl: service,
+      imageUrl: custom,
     },
     {
       id: 5,
@@ -174,7 +180,7 @@ const Services = () => {
             'Ensuring uniformity across branding and marketing materials for a strong visual impact.            ',
         }
       ],
-      imageUrl: service,
+      imageUrl: graphic,
     },
     {
       id: 6,
@@ -205,7 +211,7 @@ const Services = () => {
             'Transparent insights and actionable improvements to drive conversions.         ',
         }
       ],
-      imageUrl: service,
+      imageUrl: digital,
     }
   ];
 

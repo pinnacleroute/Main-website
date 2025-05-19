@@ -33,7 +33,7 @@ const OurWork = () => {
                                 alt={item.text}
                                 className="w-[100%] rounded-md"
                             />
-                            <div className='flex items-end w-full h-full px-8 pb-8'>
+                            <div className='flex items-end w-full h-1/2 px-8 pb-8'>
                                 <div>
                                     <p className="md:text-4xl sm-text-3xl text-2xl font-medium mb-8">{item.text}</p>
                                     <div className={`border ${i===0 ? "border-black" : "border-white"} h-[1px] w-[50px]`}></div>
