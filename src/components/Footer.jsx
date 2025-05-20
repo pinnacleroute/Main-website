@@ -1,5 +1,5 @@
 import React from "react";
-import rocket from "../assets/rocket.png"
+import rocket from "../assets/arrow-black.png"
 import twitter from '../assets/fa-twitter.png';
 import facebook from '../assets/fa-facebook-square.png';
 import google from '../assets/fa-google-plus.png';

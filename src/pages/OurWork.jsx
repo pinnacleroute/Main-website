@@ -11,7 +11,7 @@ import FAQ from '../components/FAQ';
 const OurWork = () => {
 
     const gridData = [
-        { id: 1, imgSrc: img1, text: 'Mandaean', class: "bg-[#C0EEE1] text-black" },
+        { id: 1, imgSrc: img1, text: 'Mandaean Life', class: "bg-[#C0EEE1] text-black" },
         { id: 2, imgSrc: img2, text: 'The Designer Club', class: "bg-[#1777F7] text-white" },
         { id: 3, imgSrc: img3, text: 'Iconic Jewelry', class: "bg-[#A195D3] text-white" },
         { id: 4, imgSrc: img4, text: 'AVP', class: "bg-[#030506] text-white" }
