@@ -4,6 +4,24 @@ import Showchar from './Showchar';
 import frame from '../assets/Frame.png';
 import logo from '../assets/logos.png';
 import background from '../assets/backcolor.png';
+import { Helmet } from "react-helmet";
+
+function HomePage() {
+  return (
+    <>
+      <Helmet>
+        <title>Pinnacle Route – Achieve Digital Excellence</title>
+        <meta name="description" content="Pinnacle Route helps you achieve digital excellence through cutting-edge AI & Automation, Website Development, Mobile Apps, and Custom Software solutions tailored for global success."/>
+        <link rel="canonical" href="https://www.pinnacleroute.com/" />
+      </Helmet>
+
+      {/* Your page content */}
+    </>
+  );
+}
+
+export default HomePage;
+
 
 const HomePageConten = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
