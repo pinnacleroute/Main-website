@@ -1,8 +1,8 @@
 import React from "react";
 import rocket from "../assets/arrow-black.png"
 import twitter from '../assets/fa-twitter.png';
-import facebook from '../assets/fa-facebook-square.png';
-import google from '../assets/fa-google-plus.png';
+import facebook from '../assets/icons8-instagram-32.png';
+import linkedin from '../assets/icons8-linkedin-35.png';
 
 
 const Footer = () => {
@@ -24,9 +24,9 @@ const Footer = () => {
                     <a className=" hover:bg-gray-700 transition-colors duration-400 sm:ml-10 ml-0 sm:mt-0 mt-1" href="/policy">Privacy Policy</a>
                     <a className=" hover:bg-gray-700 transition-colors duration-400 sm:ml-10 ml-0 sm:mt-0 mt-1" href="/terms">Terms</a>
                     <div className="flex items-center sm:mt-0 mt-4">
-                        <a className="sm:ml-10 ml-0" href="http://" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" srcset="" /></a>
-                        <a className="ml-10" href="http://" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="" srcset="" /></a>
-                        <a className="ml-10" href="http://" target="_blank" rel="noopener noreferrer"><img src={google} alt="" srcset="" /></a>
+                        <a className="sm:ml-10 ml-0" href="https://x.com/PinnacleRoute" target="_blank" ><img src={twitter} alt="" srcset="" /></a>
+                        <a className="sm:ml-10 ml-0" href="https://www.linkedin.com/in/pinnacle-route/" target="_blank"><img src={linkedin} alt="" srcset="" /></a>
+                        <a className="sm:ml-10 ml-0" href="https://www.instagram.com/pinnacle_route/" target="_blank" ><img src={facebook} alt="" srcset="" /></a>
                     </div>
                 </div>
             </div>
