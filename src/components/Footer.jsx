@@ -21,12 +21,20 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="text-white text-xl flex sm:flex-row flex-col items-center">
-                    <a className=" hover:bg-gray-700 transition-colors duration-400 sm:ml-10 ml-0 sm:mt-0 mt-1" href="/policy">Privacy Policy</a>
-                    <a className=" hover:bg-gray-700 transition-colors duration-400 sm:ml-10 ml-0 sm:mt-0 mt-1" href="/terms">Terms</a>
+                    <div className="text-white text-xl flex sm:flex-row flex-col items-center">
+                        <a className="hover:bg-gray-700 transition-colors duration-400 sm:ml-10 ml-0 sm:mt-0 mt-1" href="/policy">Privacy Policy</a>
+                        <a className="hover:bg-gray-700 transition-colors duration-400 sm:ml-10 ml-0 sm:mt-0 mt-3" href="/terms">Terms</a>
+                    </div>
                     <div className="flex items-center sm:mt-0 mt-4">
-                        <a className="sm:ml-10 ml-0" href="https://x.com/PinnacleRoute" target="_blank" ><img src={twitter} alt="" srcset="" /></a>
-                        <a className="sm:ml-10 ml-0" href="https://www.linkedin.com/in/pinnacle-route/" target="_blank"><img src={linkedin} alt="" srcset="" /></a>
-                        <a className="sm:ml-10 ml-0" href="https://www.instagram.com/pinnacle_route/" target="_blank" ><img src={facebook} alt="" srcset="" /></a>
+                        <a className="sm:ml-10 ml-4" href="https://x.com/PinnacleRoute" target="_blank" rel="noopener noreferrer">
+                            <img src={twitter} alt="Twitter" />
+                        </a>
+                        <a className="sm:ml-10 ml-4" href="https://www.linkedin.com/in/pinnacle-route/" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} alt="LinkedIn" />
+                        </a>
+                        <a className="sm:ml-10 ml-4" href="https://www.instagram.com/pinnacle_route/" target="_blank" rel="noopener noreferrer">
+                            <img src={facebook} alt="Instagram" />
+                        </a>
                     </div>
                 </div>
             </div>

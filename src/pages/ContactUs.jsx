@@ -104,8 +104,9 @@ const ContactUs = () => {
                             required
                         />
                         <ReCAPTCHA
-                            // sitekey="6LcxCUorAAAAAExkO3U1MbHiFMEs4s4bVvzjXxb6" // ← use checkbox style key here
-                            sitekey="6LfdYVYrAAAAADuAW-DHihyUwvCQRIUWXWdL5r2V"
+                            // sitekey="6LcxCUorAAAAAExkO3U1MbHiFMEs4s4bVvzjXxb6" 
+                            // sitekey="6LfdYVYrAAAAADuAW-DHihyUwvCQRIUWXWdL5r2V"
+                            sitekey="6LfdYVYrAAAAAO0Wg_QvT_ZjGook_hqhVzIg2Cf8"
                             onChange={handleCaptchaChange}
                         />
                         <button

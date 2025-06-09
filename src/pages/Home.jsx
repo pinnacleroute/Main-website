@@ -371,10 +371,20 @@ const Home = () => {
                                         backgroundColor: '#fff'
                                     }}
                                 >
-                                    <div className='flex gap-2 mb-4'>
+                                     <div className='flex gap-2 mt-2'>
                                         {Array.from({ length: review.rating }, (_, index) => (
-                                            <svg key={index} width="21" height="20" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="..." fill="#FFC700" />
+                                            <svg
+                                                key={index}
+                                                width="21"
+                                                height="20"
+                                                viewBox="0 0 31 30"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M15.5 0L19.09 9.27H29L21 15.18L24.18 24.02L15.5 18.54L6.82 24.02L10 15.18L2 9.27H11.91L15.5 0Z"
+                                                    fill="#FFC700"
+                                                />
                                             </svg>
                                         ))}
                                     </div>
